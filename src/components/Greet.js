@@ -1,11 +1,10 @@
 import React,{Component} from 'react';
 
-const Greet =(prop)=>{
-    console.log(prop);
+const Greet =({name,heroName})=>{
   return(
   <div>
-  <h1>hello {prop.name} {prop.heroName} </h1>
-  {prop.children}
+  <h1>hello {name} {heroName} </h1>
+   {/* {prop.children}  */}
   </div>
   )
 }
