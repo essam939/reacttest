@@ -1,25 +1,24 @@
 import React, { Component } from 'react';
 import logo from './logo.svg';
 import './App.css';
-
+import Greet from './components/Greet'
+import Welcome from './components/Welcome'
 class App extends Component {
   render() {
     return (
       <div className="App">
-        <header className="App-header">
-          <img src={logo} className="App-logo" alt="logo" />
-          <p>
-            Edit <code>src/App.js</code> and save to reload.
-          </p>
-          <a
-            className="App-link"
-            href="https://reactjs.org"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Learn React
-          </a>
-        </header>
+  <Greet name="Essam"  heroName="Batman">
+  <p>this is children props</p>
+  </Greet>
+  <Greet name="hend" heroName="superman">
+  <button>Action</button>
+  </Greet>
+  <Greet name="maro" heroName="wonder"/>
+  
+<Welcome  name="Essam"  heroName="Batman"/>
+<Welcome  name="hend" heroName="superman"/>
+<Welcome  name="maro" heroName="wonder"/>
+
       </div>
     );
   }
