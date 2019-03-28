@@ -1,0 +1,10 @@
+.primary{
+    color:orange;
+}
+.primary:hover{
+    color:red;
+    cursor: pointer;
+}
+.font-xl{
+    font-weight: 72;
+}

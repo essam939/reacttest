@@ -10,7 +10,8 @@ import ClassClick from './components/ClassClick';
 import EventBind from './components/EventBind';
 import ParenComponent from './components/ParenComponent';
 import UserGreeting from './components/UserGreeting';
-
+import NameList from './components/NameList';
+import StyleSheet from './components/StyleSheet';
 class App extends Component {
   render() {
     return (
@@ -26,6 +27,7 @@ class App extends Component {
 <Welcome  name="Essam"  heroName="Batman"/>
 <Welcome  name="hend" heroName="superman"/>
 <Welcome  name="maro" heroName="wonder"/>
+<StyleSheet primary={true}></StyleSheet>
 <Message></Message>
 <Counter></Counter>
 <FunctionClick />
@@ -34,6 +36,7 @@ class App extends Component {
 <EventBind></EventBind>
 <ParenComponent />
 <UserGreeting></UserGreeting>
+<NameList></NameList>
       </div>
     );
   }
