@@ -27,6 +27,7 @@ handelTopicChange=(event)=>{
 }
 handelSubmit=(event)=>{
     alert(`${this.state.username} ${this.state.comments}${this.state.topic}`)
+   event.preventDefult()
 }
   render() {
     return (
